@@ -1,0 +1,197 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+  scroll-behavior:smooth;
+}
+
+/* NAV */
+.navbar{
+  height: 15%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  position:fixed;
+  width:100%;
+  top:0;
+  background:#111827;
+  display:flex;
+  justify-content:space-between;
+  padding:15px 20px;
+  align-items:center;
+}
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:20px;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+}
+nav a:hover{
+  color:#38bdf8;
+}
+
+.menu{
+  display:none;
+  cursor:pointer;
+}
+
+/* HOME */
+.home{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:linear-gradient(120deg,#1e293b,#0f172a);
+}
+
+.home h1 span{
+  color:#38bdf8;
+}
+
+.btn{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  padding:10px 20px;
+  background:#38bdf8;
+  color:black;
+  text-decoration:none;
+  margin:10px;
+  display:inline-block;
+  border-radius:5px;
+}
+
+.btn.outline{
+  background:transparent;
+  border:1px solid #38bdf8;
+  color:#38bdf8;
+}
+
+/* SECTIONS */
+section{
+  padding:80px 20px;
+  text-align:center;
+}
+
+/* ABOUT */
+.about-container{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.about img{
+  border-radius:2000px;
+}
+
+/* SKILLS */
+.bar{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  width:200px;
+  background:#334155;
+  height:10px;
+  border-radius:5px;
+}
+
+.bar div{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  height:10px;
+  background:#38bdf8;
+}
+
+/* GRID */
+.grid{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.card{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  background:#1e293b;
+  padding:20px;
+  border-radius:10px;
+  width:200px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:scale(1.05);
+}
+
+/* FAQ */
+.faq-item p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  display:none;
+}
+
+/* FORM */
+form{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  max-width:400px;
+  margin:auto;
+}
+
+input,textarea{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  padding:10px;
+}
+
+/* TOP BUTTON */
+#topBtn{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  padding:10px;
+  display:none;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .nav-links{
+    font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top:60px;
+    right:0;
+    background:#111827;
+    padding:20px;
+  }
+
+  .menu{
+    font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+    display:block;
+  }
+}

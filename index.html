@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Professional Portfolio</title>
+
+  <link rel="stylesheet" href="design.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar">
+    <div class="logo">MyPortfolio</div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="menu" onclick="toggleMenu()">☰</div>
+    <button id="modeToggle">🌙</button>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="home">
+  <div class="home-content">
+    <h1>Hi, I'm <span>Aliza.Web-Developer</span></h1>
+    <h2 class="typing"></h2>
+    <p>I build modern, responsive websites.</p>
+
+    <div class="buttons">
+      <a href="#contact" class="btn">Contact Me</a>
+      <a href="#portfolio" class="btn outline">View Work</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2>About Me</h2>
+
+  <div class="about-container">
+    <img src="logo.jpeg">
+
+    <div>
+      <p>
+        I am a passionate web developer who builds modern and responsive websites using HTML, CSS, and JavaScript.
+      </p>
+
+      <div class="skills">
+        <div class="skill"><span>HTML</span><div class="bar"><div style="width: 97%"></div></div></div>
+        <div class="skill"><span>CSS</span><div class="bar"><div style="width:97%"></div></div></div>
+        <div class="skill"><span>JavaScript</span><div class="bar"><div style="width:95%"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>Services</h2>
+
+  <div class="grid">
+    <div class="card">Web Design</div>
+    <div class="card">Web Development</div>
+    <div class="card">SEO Optimization</div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <h2>My Work</h2>
+
+  <div class="grid">
+    <div class="card">
+    <video width="100%" controls>
+      <source src="work 3.mp4" type="video/mp4">
+    </video>
+    <p>Project 1</p>
+  </div>
+  <div class="card">
+    <video width="100%" controls>
+      <source src="work 2.mp4" type="video/mp4">
+    </video>
+    <p>Project 2</p>
+  </div>
+    <div class="card">
+    <video width="100%" controls>
+      <source src="work 1.mp4" type="video/mp4">
+    </video>
+    <p>Project 3</p>
+  </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <h2>FAQ</h2>
+
+  <div class="faq-item">
+    <h3 onclick="toggleFAQ(this)">What services do you offer?</h3>
+    <p>Web design, development and SEO.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3 onclick="toggleFAQ(this)">How much do you charge?</h3>
+    <p>Depends on project requirements.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+
+  <form onsubmit="return validateForm()">
+    <input type="text" id="name" placeholder="Your Name" />
+    <input type="email" id="email" placeholder="Your Email" />
+    <textarea id="message" placeholder="Message"></textarea>
+    <button type="submit"><h2>Send</h2></button>
+  </form>
+</section>
+
+<button id="topBtn" onclick="scrollTop()">↑</button>
+
+<footer>
+  <p>© 2026 My Portfolio. All Rights Reserved.</p>
+</footer>
+
+<script src="javascript.js"></script>
+</body>
+</html>
+</body>
+</html>
